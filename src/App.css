@@ -1,0 +1,27 @@
+.App {
+  background-color: red;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(6, 294px);
+  grid-template-rows: repeat(3, 300px);
+}
+.main {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: repeat(4, 400px);
+  grid-template-rows: repeat(2, 400px);
+}
+.card{
+  justify-content: center;
+}
+.side {
+  background-color: rgb(188, 113, 0);
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
