@@ -1,27 +1,29 @@
-.App {
-  background-color: red;
-  display: grid;
+.app-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.annonce-table {
+  flex: 1;
+  padding: 20px;
+}
+
+.annonce-table table {
   width: 100%;
-  grid-template-columns: repeat(6, 294px);
-  grid-template-rows: repeat(3, 300px);
+  border-collapse: collapse;
 }
-.main {
-  grid-column-start: 2;
-  grid-column-end: 7;
-  grid-row-start: 1;
-  grid-row-end: 4;
-  background-color: rgb(255, 255, 255);
-  display: grid;
-  grid-template-columns: repeat(4, 400px);
-  grid-template-rows: repeat(2, 400px);
+
+.annonce-table th, .annonce-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
 }
-.card{
-  justify-content: center;
-}
-.side {
-  background-color: rgb(188, 113, 0);
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 4;
+
+.annonce-table th {
+  background-color: #e0e0e0;
 }
